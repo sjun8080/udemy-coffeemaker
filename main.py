@@ -72,7 +72,7 @@ def process_coins(drink_cost):
         print("Sorry, not enough money. Refunded")
         return 0
     elif total_money_received > drink_cost:
-        change = total_money - drink_cost
+        change = total_money_received - drink_cost
         print(f"Here is your change: ${change}")
     else:
         print("Exact amount received. No change needed.")
